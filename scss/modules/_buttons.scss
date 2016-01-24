@@ -1,0 +1,42 @@
+.header {
+	&__nav {	
+
+		&__desktop-menu {
+			@include mq(medium) {
+				li:hover {
+						background: $tertiary-color;
+						transition: 0.4s;
+					}
+			}
+		}
+	}
+}
+
+.main-container__button {
+
+	@include themed-button(65px, 180px);
+
+	& span {
+		font-size: em(18px);
+		border: 4px solid $white;
+		border-radius: 4px;
+	}
+}
+
+.footer__media-container__button {
+	&:hover {
+		@extend %icn-hover;
+	}
+}
+
+.rooms__container__button {
+	@include themed-button(60px, 180px);
+
+	& span {
+		padding: em(2px) 1.9em;
+		font-size: em(23px);
+		border: 4px solid $white;
+		border-radius: 4px;
+	}
+
+}

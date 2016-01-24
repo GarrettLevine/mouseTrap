@@ -1,0 +1,29 @@
+.footer {
+	height: 80px;
+
+	position: relative;
+	z-index: 1000;
+
+	&__container {
+		width: 90%;
+		margin: auto;
+	}
+
+	&__logo {
+		@extend %float-left;
+		margin-top: 1em;
+	}
+
+	&__media-container {
+		@extend %float-right;
+		min-width: 200px;
+
+		margin-bottom: 0;
+		margin-right: 0;
+
+		li {
+			display: inline-block;
+			margin-left: 1em;
+		}
+	}
+}

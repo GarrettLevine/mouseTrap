@@ -1,0 +1,93 @@
+.header {
+	position: relative;
+	width: 100%;
+	z-index: 1000;
+	height: 90px;
+
+	h1 {
+		display: none;
+
+		@include mq(medium) {
+			float: left;
+			display: inline-block;
+
+			width: 270px;
+
+			padding: 1em;
+			margin: 0;
+			letter-spacing: 1.4px;
+		}
+	}
+
+	&__container {
+		width: 97%;
+		margin: auto;
+	}
+
+	&__logo {
+		@extend %float-left;
+		margin-top: 22px;
+		margin-left: 22px;
+
+		@include mq(medium) {
+			visibility: hidden;
+		}
+	}
+
+	&__nav {
+		&__accordian {
+			padding: 1em;
+			@extend %float-right;
+
+			@include mq(large) {
+				display: none;
+			}
+		}
+
+		&__desktop-menu {
+			display: none;
+
+			@include mq(large) {
+				float: right;
+				display: block;
+				padding: 0;
+
+				li {
+					display: inline-block;
+					font-size: em(20px);
+
+					a {
+						padding: 0.9em;
+						display: block;
+					}
+
+					
+				}
+			}
+		}
+	}
+}
+
+.dropit-submenu {
+	@extend %bottom-box-shadow;
+	background: $tertiary-color;
+	text-align: center;
+
+	width: 200px;
+
+
+	li {
+		a {
+			display: block;
+			padding: 1em;
+			width: 100%;
+		}
+		font-size: em(26px);
+
+		&:hover {
+			background: lighten($tertiary-color, 10%);
+			color: $link-color;
+			transition: 0.5s;
+		}
+	}
+}

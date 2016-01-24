@@ -1,0 +1,33 @@
+%float-left {
+	float: left;
+	display: inline-block;
+}
+
+%float-right {
+	float: right;
+	display: inline-block;
+}
+
+%rooms-container {
+	text-align: center;
+	margin: auto;
+	height: 460px;
+	width: 85%;
+}
+
+%room-container-content-padding {
+	margin: 0;
+	padding-top: 2.2em;
+}
+
+@include mq(medium) {
+	%room-container-conent-padding720 {
+		margin: 0;
+		padding-top: em(45px);
+	}
+
+	%info-container-formating {
+		height: 400px;
+		width: 40%;
+	}
+}

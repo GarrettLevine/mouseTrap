@@ -1,0 +1,43 @@
+.header__logo {
+	@include img-replace(
+		'icons/mouseLogo.svg',
+		50px,
+		50px
+	);
+}
+
+
+.main-container__image {
+	@include img-replace(
+		'rooms/studyRoom.jpg',
+		100%,
+		600px
+		);
+
+	background-size: cover;
+
+	@include mq(medium) {
+		@include img-replace(
+		'rooms/studyRoom.jpg',
+		100%,
+		750px
+		);
+	}	
+}
+
+.rooms {
+	&__container {
+		&--teaParty {
+			@include gradient-background-img(aliceRoom, $gradient-orange);
+		}
+		&--prisonEscape {
+			@include gradient-background-img(prisonRoom, $gradient-orange);
+		}
+		&--pyramidPuzzles {
+			@include gradient-background-img(pyramidRoom, $gradient-orange);
+		}
+		&--doctorsStudy {
+			@include gradient-background-img(studyRoom, $gradient-orange);
+		}
+	}
+}

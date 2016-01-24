@@ -1,0 +1,59 @@
+form {
+	width: 90%;
+	max-width: 720px;
+	margin: auto;
+	padding: 50px 0;
+}
+
+input[type="text"] {
+	height: 60px;
+
+	
+	&:focus {
+		@extend %box-shadow-hover;
+		outline: none;
+	}
+}
+
+textarea {
+	height: 300px;
+	resize: none;
+
+	&:focus {
+		@extend %box-shadow-hover;
+		outline: none;
+	}
+}
+
+input[type="text"],
+textarea {
+	@extend %tb-box-shadow;
+
+	width: 100%;
+	margin-top: em(8px);
+	margin-bottom: em(8px);
+	border: none;
+
+	font-size: em(18px);
+	padding: 1em;
+	color: $tertiary-color;
+	opacity: 0.87;
+
+	background-color: darken($white, 2%);
+}
+
+label {
+	color: $secondary-color;
+	font-size: em(25px);
+	margin: 16px 0 16px 8px;
+	padding-top: em(22px);
+}
+
+input[type="submit"] {
+	@include themed-button(60px, 120px);
+
+	font-size: em(18px);
+	letter-spacing: 1.5px;
+	margin-top: em(24px);
+	text-transform: uppercase;
+}

@@ -1,0 +1,8 @@
+.header {
+	@extend %bottom-box-shadow;
+	background-color: $primary-color;
+}
+
+h1 {
+	color: $white;
+}
