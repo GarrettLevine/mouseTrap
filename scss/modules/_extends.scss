@@ -1,0 +1,65 @@
+//===================================================================
+//  MODULE EXTENDS 
+//===================================================================
+
+
+//======================================
+// BOX SHADOWS
+//======================================
+
+%bottom-box-shadow {
+	box-shadow: 0 em(2px) em(2px) $box-shadow-black;
+}
+
+%top-box-shadow {
+	box-shadow: 0 em(-2px) em(5px) $box-shadow-black;
+}
+
+%tb-box-shadow {
+	box-shadow: 0 em(-2px) em(5px) $box-shadow-black;
+	box-shadow: 0 em(2px) em(2px) $box-shadow-black;
+}
+
+%box-shadow-hover {
+	box-shadow: 0 em(5px) em(7px) $box-shadow-black;
+	transition: 0.3s;
+}
+
+//======================================
+// ICON STYLES
+//======================================
+
+%button-styles {
+	@extend %tb-box-shadow;
+	border: none;
+	border-radius: 4px;
+}
+
+
+%icn-hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.8s;
+}
+
+%icn-active {
+	transform: scale(1, 1);
+	transition: 0.1s;
+}
+
+
+//======================================
+// TM Image Styles
+//======================================
+
+%tm-image-style {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	border: 8px solid $white;
+
+}
+
+
+
+
+

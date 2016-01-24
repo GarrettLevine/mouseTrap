@@ -1,0 +1,10 @@
+.rooms {
+	background: $white;
+	letter-spacing: 1.3px;
+	&__container {	
+
+		& > div {
+			@extend %tb-box-shadow;
+		}
+	}
+}

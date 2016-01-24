@@ -1,0 +1,55 @@
+$roomList: --teaParty, --prisonEscape, --pyramidPuzzles, --doctorsStudy;
+
+.rooms {
+	position: relative;
+	margin: auto;
+	color: $white;
+
+	width: 90%;
+
+	&__container {
+		margin: auto;
+		padding: 2em;
+
+		@include mq(medium) {
+			width: 100%;
+		}
+
+		& > div {
+			height: 460px;
+			margin-top: 1.3em;
+			margin-bottom: 1.3em;
+
+			@include mq(medium) {
+				width: 45%;
+				margin-left: 2em;
+				float: left;
+			}
+		}
+
+		&__button {
+			margin-top: 2.5em;
+
+			@include mq(medium) {
+				margin-top: 3em;
+			}
+
+			@include mq(large) {
+				margin-top: 5em;
+			}
+		}
+
+		@each $room in $roomList  {
+			&#{$room} {
+				&__container {
+					@extend %rooms-container;
+
+					h3, h4, h5, p {
+						@extend %room-container-content-padding;
+					}
+				}
+			}
+		}
+
+	}
+}

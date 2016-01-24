@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+ <html>
+ 	<head>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<title>Mouse Trap Escape Games</title>
+
+ 		
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+ 		<link rel="stylesheet" type="text/css" href="js/slick/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="js/slick/slick/slick-theme.css"/>
+
+ 		<link rel="stylesheet" href="js/Dropit-1.1.1/dropit.css">
+ 		<link rel="stylesheet" href="css/main.css" type="text/css">
+ 	</head>
+
+ 	<body>
+ 		<header class="header">
+ 			<div class="header__container">
+ 				<h1>Mouse Trap Escape Games</h1>
+		 		<div class="header__logo"></div>
+	 			<nav class="header__nav">
+					<ul id="menu" class="header__nav__accordian dropit">
+						<li class="dropit-trigger dropit-open">
+							<a href="#"><img src="assets/icons/menu-icn.svg"></a>
+							<ul class="dropit-submenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="rooms.html">Rooms</a></li>
+			 					<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</li>
+					</ul>
+	 				<ul class="header__nav__desktop-menu">
+	 					<li><a href="index.html">Home</a></li>
+	 					<li><a href="rooms.html">Rooms</a></li>
+	 					<li><a href="contact.html">Contact</a></li>
+
+	 				</ul>
+	 			</nav>
+	 		</div>
+ 		</header>
+ 		<div class="main-container">
+ 			<div class="main-container__image">
+ 				<div class="main-container__image--overlay"></div>
+				<div class="main-container__button-container">
+					<div class="main-container__button-container--fixer">
+		 				<a href="contact.html"><button class="main-container__button"><span>Book A Room!</span></button></a>
+	 				</div>
+	 			</div>
+ 			</div><!--END OF MAIN-->
+ 				
+ 		</div>
+ 		<div class="about">
+ 			<div class="about__container grid_container">
+ 				<div class="about__container--escape grid_6">
+					<img src="assets/icons/clock.svg" alt="">
+					<h2>Escape in 60 Minutes!</h2>
+					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec id elit non mi porta gravida at eget metus.</p>
+ 				</div>
+ 				
+ 				<div class="about__container--players grid_6">
+	 				<img src="assets/icons/friends.svg" alt="">
+	 				<h2>2-8 Players. $15 each.</h2>
+	 				<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+ 				</div>
+ 			</div>
+ 		</div><!--END OF ABOUT-->
+
+ 		<div class="tm">
+ 			<div class="tm-container">
+ 				<div class="tm-container__info">
+ 					<div class="tm-container__info__imageContainer--jam"></div>
+ 					<blockquote>
+ 					"No. She's not there now. Take for instance its founder and death written
+					... I don't know ... broken down plagiarist ... stayed high on acid until
+					the day he died. I can't seem to find that chapter in his silly book of
+					lies.""
+					</blockquote>
+ 				</div>
+ 				<div class="tm-container__info">
+ 					<div class="tm-container__info__imageContainer--helen"></div>
+ 					<blockquote>
+						"I don't think Buffy's going to be too broken up over a pylon. Can't call to mom, can't say a word. She's a truck-driving magic mama! I just don't see why everyone's always picking on Marie-Antoinette. I told him that I loved him, I kissed him, and I killed him.""
+					</blockquote>
+ 				</div>
+ 				<div class="tm-container__info">
+ 					<div class="tm-container__info__imageContainer--anthony"></div>
+ 					<blockquote>
+						"Deserunt ham hock minim meatball commodo incididunt. Lorem andouille aute duis. Pork belly in nisi elit ipsum proident in consequat. Duis meatloaf laboris ad kevin.""
+					</blockquote>
+ 				</div>
+ 				<div class="tm-container__info">
+ 					<div class="tm-container__info__imageContainer--maite"></div>
+ 					<blockquote>
+						"Fruitcake croissant danish icing brownie jelly-o. Marzipan bear claw pastry carrot cake brownie cake brownie I love biscuit. Chupa chups donut gingerbread cheesecake cake. Fruitcake chocolate cake pastry sweet roll pie pie dessert."
+					</blockquote>
+ 				</div>
+ 			</div>
+ 		</div> <!--END OF TESTIMONIALS-->
+
+ 		<footer class="footer">
+	 		<div class="footer__container">
+	 			<a href=""><img class="footer__logo" src="assets/icons/mouseLogo.svg" alt="logo"></a>
+	 			<ul class="footer__media-container">
+	 				<li class="footer__media-container__button"><a href=""><img src="assets/icons/facebook-icn.svg" alt=""></a></li>
+	 				<li class="footer__media-container__button"><a href=""><img src="assets/icons/twitter-icn.svg" alt=""></a></li>
+	 				<li class="footer__media-container__button"><a href=""><img src="assets/icons/phone-icn.svg" alt=""></a></li>
+	 			</ul>
+	 		</div>
+ 		</footer>
+ 		<script src="js/Dropit-1.1.1/dropit.js"></script>
+ 		<script src="js/slick/slick/slick.js"></script>
+ 		<script src="js/main.js"></script>
+ 		<script>		
+			$(document).ready(function() {
+				$('.tm-container').slick({
+				  dots: true,
+				  arrows: false,
+				  infinite: true,
+				  speed: 400,
+				  slidesToShow: 1,
+				  slidesToScroll: 1,
+				  autoplay: true,
+				  autoplaySpeed: 3000
+				}); //end of slick
+			}); // end of Doc ready Slick
+ 		</script>
+ 	</body>
+ </html>

@@ -1,0 +1,92 @@
+/*************************************
+GLOBAL GRID CONTAINER RULES
+*************************************/
+.grid_container{
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 720px) {
+
+	/*************************************
+	COLOUMNS
+	*************************************/
+	.grid_container > [class^="grid-"] {
+		float: left;
+		min-height: 1px;
+		padding: 0 10px;
+		margin: 0 1%;
+	}
+
+	.grid_container > [class^="grid-"]:first-child {
+		margin-left: 0;
+	}
+
+	.grid_container > [class^="grid-"]:last-child {
+		float: right;
+	}
+
+	/**************************************
+	COLOUMN LAYOUT 65px wide, 20px gutters
+	**************************************/
+
+	.grid_1 {
+		width: 6.5%;
+	}
+
+	.grid_2 {
+		width: 15%;
+	}
+
+	.grid_3 {
+		width: 23.5%;
+	}
+
+	.grid_4 {
+		width: 32%;
+	}
+
+	.grid_5 {
+		width: 40.5%;
+	}
+
+	.grid_6 {
+		width: 49%;
+	}
+
+	.grid_7 {
+		width: 57.5%;
+	}
+
+	.grid_8 {
+		width: 66%;
+	}
+
+	.grid_9 {
+		width: 74.5%;
+	}
+
+	.grid_10 {
+		width: 83%;
+	}
+
+	.grid_11 {
+		width: 91.5%;
+	}
+
+	.grid_12 {
+		width: 100%;
+	}
+	
+	/*************************************
+	CLEARFIX
+	*************************************/
+
+	.group:after,
+	.grid_container:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
